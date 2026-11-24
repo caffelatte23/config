@@ -1,0 +1,30 @@
+{
+	"name": "@caffelatte23/eslint-config",
+  "type": "module",
+	"description": "caffelatte's eslint config",
+	"version": "0.0.1",
+	"files": ["dist"],
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "bunx tsup"
+	},
+  "publishConfig": {
+    "access": "public",
+    "@caffelatte23:registry": "https://npm.pkg.github.com"
+  },
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest",
+		"tsup": "^8.3.6"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0",
+		"eslint": "^9.19.0"
+	},
+	"dependencies": {
+		"@eslint/js": "^9.19.0",
+		"eslint-config-flat-gitignore": "^2.0.0",
+		"typescript-eslint": "^8.23.0"
+	}
+}
