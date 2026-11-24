@@ -1,2 +1,2 @@
-export { defineConfig as defineLintConfig } from "./lint.ts";
-export { defineConfig as defineFmtConfig } from "./fmt.ts";
+export { default as lint } from "./lint.ts";
+export { default as fmt } from "./fmt.ts";

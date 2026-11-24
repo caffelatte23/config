@@ -1,23 +1,22 @@
-# vite-plus-starter
+# @caffelatte23/oxc-config
 
-A starter for creating a Vite Plus project.
+```ts
+// oxlint.config.ts
+import { defineConfig } from "oxlint";
+import lint from "@caffelatte23/oxc-config/lint";
 
-## Development
-
-- Install dependencies:
-
-```bash
-vp install
+export default defineConfig({
+  extends: [lint],
+  rules: {},
+});
 ```
 
-- Run the unit tests:
+```ts
+// oxfmt.config.ts (oxfmt has no `extends`, so spread it)
+import { defineConfig } from "oxfmt";
+import fmt from "@caffelatte23/oxc-config/fmt";
 
-```bash
-vp test
-```
-
-- Build the library:
-
-```bash
-vp pack
+export default defineConfig({
+  ...fmt,
+});
 ```

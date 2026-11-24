@@ -1,7 +1,7 @@
-import { defineConfig as defineLintConfig, type OxlintConfig } from "oxlint";
+import { defineConfig } from "oxlint";
 
-export const defineConfig = (config: OxlintConfig = {}): OxlintConfig =>
-  defineLintConfig({
-    plugins: ["eslint", "import", "typescript"],
-    extends: [config],
-  });
+const config = defineConfig({
+  plugins: ["eslint", "import", "typescript"],
+});
+
+export default config;
