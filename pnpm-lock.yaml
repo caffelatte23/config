@@ -23,7 +23,7 @@ importers:
         specifier: 'catalog:'
         version: 1.8.0(@types/node@25.9.9)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(typescript@6.0.3)(yaml@2.9.1)
 
-  packages/eslint-config:
+  packages/eslint:
     dependencies:
       '@eslint/js':
         specifier: ^9.19.0
@@ -48,7 +48,7 @@ importers:
         specifier: 'catalog:'
         version: 1.8.0(@types/node@25.9.9)(@typescript/native-preview@7.0.0-dev.20260509.2)(@vitest/ui@5.1.1(vitest@5.1.1))(jiti@2.7.0)(typescript@6.0.3)(yaml@2.9.1)
 
-  packages/oxc-config:
+  packages/oxc:
     devDependencies:
       '@types/node':
         specifier: ^25.6.2
