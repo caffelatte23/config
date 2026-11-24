@@ -37,4 +37,4 @@ jobs:
 
       - run: vp test
 
-      - run: pnpm publish --access public --no-git-checks
+      - run: pnpm -r publish --access public --no-git-checks
