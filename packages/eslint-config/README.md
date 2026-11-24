@@ -1,15 +1,8 @@
-# eslint-config
+# @caffelatte23/eslint-config
 
-To install dependencies:
+```js
+// eslint.config.mjs
+import config from "@caffelatte23/eslint-config";
 
-```bash
-bun install
+export default config();
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.45. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
